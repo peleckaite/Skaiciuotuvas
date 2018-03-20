@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ems.vtvpmc.skaiciuotuvas.MainActivity">
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/blue"
+    tools:context="ems.vtvpmc.skaiciuotuvas.MainActivity"
+    tools:layout_centerHorizontal="true">
 
     <Button
         android:id="@+id/btn9"
@@ -146,7 +150,8 @@
         android:layout_above="@+id/btndalyba"
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/btn9"
-        android:layout_marginBottom="14dp" />
+        android:layout_margin="54dp"
+        android:textSize="35sp" />
 
     <TextView
         android:id="@+id/tvResult"
@@ -155,5 +160,7 @@
         android:layout_above="@+id/tvContent"
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/btn9"
-        android:layout_marginBottom="44dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="35sp" />
 </RelativeLayout>

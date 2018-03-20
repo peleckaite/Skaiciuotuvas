@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
     private Button eight;
     private Button nine;
     private Button zero;
-    private Button plus;
-    private Button minus;
-    private Button daugyba;
-    private Button dalyba;
+    private Button add;
+    private Button sub;
+    private Button mul;
+    private Button div;
     private Button lygu;
     private Button clear;
     private TextView info;
@@ -31,13 +31,10 @@ public class MainActivity extends AppCompatActivity {
     private final char MULTIPLICATION = '*';
     private final char DIVISION = '/';
     private final char EQU = 0;
-    private View add;
     private double val1 = Double.NaN;
     private double val2;
     private char ACTION;
-    private View sub;
-    private View mul;
-    private View div;
+
 
 
     @Override
@@ -48,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         zero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                info.setText(info.getText().toString()+ "0");            }
+                info.setText(info.getText().toString() + "0");            }
         });
         one.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,10 +170,10 @@ public class MainActivity extends AppCompatActivity {
         seven = (Button) findViewById(R.id.btn7);
         eight = (Button) findViewById(R.id.btn8);
         nine = (Button) findViewById(R.id.btn9);
-        plus = (Button) findViewById(R.id.btnplus);
-        minus = (Button) findViewById(R.id.btnminus);
-        daugyba = (Button) findViewById(R.id.btnkart);
-        dalyba = (Button) findViewById(R.id.btndalyba);
+        add = (Button) findViewById(R.id.btnplus);
+        sub = (Button) findViewById(R.id.btnminus);
+        mul = (Button) findViewById(R.id.btnkart);
+        div = (Button) findViewById(R.id.btndalyba);
         lygu = (Button) findViewById(R.id.btnlygu);
         clear = (Button) findViewById(R.id.btnclear);
         info = (TextView) findViewById(R.id.tvContent);
